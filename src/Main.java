@@ -22,6 +22,16 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
+        int clientOS = 0;
+        int clinetDeviceYear = 2015;
+        switch (clientOS){
+            case 0:
+                if (clinetDeviceYear > 2015){
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                } else {
+                    System.out.println("Установите обычную версию");
+                }
+        }
     }
     public static void task3 () {
         System.out.println("Задача 3");
