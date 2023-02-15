@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -36,22 +38,26 @@ public class Main {
     public static void task3 () {
         System.out.println("Задача 3");
         int year = 2021;
-        if ((year % 4 == 0) && year % 100 != 0)
-        {
+        if ((year % 4 == 0) && year % 100 != 0) {
             System.out.println(year + " год является високосным");
-        }
-        else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0))
-        {
-            System.out.println(year + " год является високосным");
-        }
-        else
-        {
-            System.out.println(year + " год не является високосным");
+        } else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0))
+        { System.out.println(year + " год является високосным");
+        } else { System.out.println(year + " год не является високосным");
         }
     }
 
     public static void task4 () {
         System.out.println("Задача 4");
+        int deliveryDistance = 95;
+        if (deliveryDistance < 20){
+            System.out.println("на доставку потребуется 1 день");
+        }else if (deliveryDistance > 20 && deliveryDistance < 60){
+            System.out.println("на доставку потребуется 2 дня");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100){
+            System.out.println("на доставку потребуется 3 дня");
+        } else if (deliveryDistance > 100){
+            System.out.println("Доставка свыше 100 км не осуществляется" );
+        }
     }
     public static void task5 () {
         System.out.println("Задача 5");
